@@ -1,0 +1,37 @@
+name: Integration interest
+description: Tell us whether guest objects would help an existing browser 3D project
+title: "[Interest] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is concept research, not a public SDK. Please do not include secrets or private project data."
+  - type: textarea
+    id: project
+    attributes:
+      label: Existing project and stack
+      description: Describe your world and its technology; a URL is optional.
+      placeholder: "Three.js gallery with custom backend..."
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: What would visitors bringing their own objects enable?
+    validations:
+      required: true
+  - type: textarea
+    id: blockers
+    attributes:
+      label: What would stop you from installing a small integration?
+    validations:
+      required: true
+  - type: dropdown
+    id: pilot
+    attributes:
+      label: Would you consider testing a future limited prototype?
+      options:
+        - "Yes"
+        - "Maybe"
+        - "No"
+    validations:
+      required: true
