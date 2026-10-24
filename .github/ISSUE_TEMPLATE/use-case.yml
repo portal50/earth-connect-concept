@@ -1,0 +1,16 @@
+name: Use case or objection
+description: Describe a concrete use case, alternative product, or reason not to integrate
+title: "[Use Case] "
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Scenario and current workaround
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Why would or wouldn't guest objects matter?
+    validations:
+      required: true
